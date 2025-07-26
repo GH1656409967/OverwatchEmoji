@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>守望先锋2聊天表情</title>
+    <!-- <link rel="stylesheet" href="E:/work/doit/js/owemoji/style.css">-->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <header>
+        守望先锋2聊天表情
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="left-panel">
+                <div class="filters">
+                    <select id="filter-type" onchange="filterImages()"></select>
+                    <select id="filter-duty" onchange="filterImages()"></select>
+                    <select id="filter-hero" onchange="filterImages()"></select>
+                </div>
+                <div class="image-container">
+                    <div class="image-grid" id="image-grid">
+                        <!-- 图片网格将由 JS 动态插入 -->
+                    </div>
+                </div>
+            </div>
+            <div class="right-panel">
+                <div class="control">
+                    <div class="color-picker">
+                        <label for="color">选择颜色：</label>
+                        <input type="color" id="color" value="#FF0000" onchange="colorChanged()">
+                        <div class="color-preview" id="color-preview"></div>
+                    </div>
+                    <button onclick="copyToClipboard()" type="button">复制文本</button>
+                </div>
+                <textarea id="output" placeholder="在此输入文本..."></textarea>
+            </div>
+        </div>
+        <div class="tips">
+            <p>使用说明：选择表情后，点击复制文本按钮将表情代码复制到剪贴板。</p>
+            <p>如果你有任何问题或建议，请联系我。</p>
+        </div>
+    </main>
+
+    <footer>
+        <span>code by</span><a href="https://rainnyt.com">Lordash</a> <span>, all right reserve</span>
+    </footer>
+</body>
+<!-- <script type="text/javascript" src="E:/work/doit/js/owemoji/script.js"></script> -->
+<script type="text/javascript" src="/script.js"></script>
+
+</html>
