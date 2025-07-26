@@ -277,12 +277,12 @@ function filterImages() {
 function initFilters() {
     const typeSet = new Set();
     const dutySet = new Set();
-    const heroList = [];
+    const heroSet = new Set();
 
     for (const item of data) {
         if (item.type) typeSet.add(item.type);
         if (item.duty) dutySet.add(item.duty);
-        if (item.type === '英雄') heroList.push(item.name);
+        if (item.type === '英雄') heroSet.add(item.name);
     }
 
     // 填充类型
@@ -298,7 +298,7 @@ function initFilters() {
     // 填充英雄（只列出 hero 类型）
     const heroSelect = document.getElementById('filter-hero');
     heroSelect.innerHTML = '<option value="">全部英雄</option>' +
-        heroList.map(name => `<option value="${name}">${name}</option>`).join('');
+        [...heroSet].map(h => `<option value="${h}">${h}</option>`).join('');
 }
 
 

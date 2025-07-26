@@ -20,13 +20,6 @@ header {
     background: #212529;
 }
 
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 8vh;
-}
-
 .left-panel {
     width: 50%;
     background: #212529;
@@ -34,8 +27,34 @@ footer {
     margin: 10px;
 }
 
+.filters {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.filters select {
+    min-width: 60px;
+    padding: 8px 12px;
+    color: #FFFFFF;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #2b3035;
+    background-color: #212529;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filters select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+}
+
 .image-container {
-    height: 90%;
+    height: 80%;
     overflow: auto;
     box-sizing: border-box;
     margin: 10px;
@@ -102,4 +121,36 @@ textarea {
 
 .tips {
     background-color: #2b3035;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1vh;
+}
+
+footer {
+    text-align: center;
+    padding: 12px;
+    font-size: 12px;
+    color: #ddd;
+    background-color: #2b3035;
+}
+
+footer a {
+    margin-left: 0.5rem;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #0056b3;
 }
