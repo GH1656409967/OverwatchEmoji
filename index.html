@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <title>守望先锋2聊天表情</title>
-    <!-- <link rel="stylesheet" href="E:/work/doit/js/owemoji/style.css">-->
+    <!-- <link rel="stylesheet" href="E:/work/doit/js/owemoji/style.css">   -->
     <link rel="stylesheet" href="/style.css">
 </head>
 
@@ -34,7 +35,10 @@
                         <input type="color" id="color" value="#FF0000" onchange="colorChanged()">
                         <div class="color-preview" id="color-preview"></div>
                     </div>
-                    <button onclick="copyToClipboard()" type="button">复制文本</button>
+                    <div>
+                        <button onclick="clearOutput()" type="button">清空</button>
+                        <button onclick="copyToClipboard()" type="button">复制</button>
+                    </div>
                 </div>
                 <textarea id="output" placeholder="在此输入文本..."></textarea>
             </div>
@@ -50,7 +54,7 @@
     </footer>
 
 </body>
-<!-- <script type="text/javascript" src="E:/work/doit/js/owemoji/script.js"></script>-->
+<!-- <script type="text/javascript" src="E:/work/doit/js/owemoji/script.js"></script> -->
 <script type="text/javascript" src="/script.js"></script>
 
 </html>
