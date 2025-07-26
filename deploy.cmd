@@ -9,7 +9,7 @@ echo %datetime%
 CALL git commit -m "%datetime%"
 CALL git checkout -b main
 CALL git remote add origin git@github.com:GH1656409967/OverwatchEmoji.git
-CALL git push -f --set-upstream origin editor
+CALL git push -f --set-upstream origin main
 REM pause
 
 
